@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  box-sizing: border-box;
+  background-color: #0f0f0f;
+}
+
+.red {
+  @apply hover:text-button-red transition duration-300 font-bold text-red-text;
+}
+
+.hoverwhite {
+  @apply hover:text-white-text transition duration-300;
+}
+
+.textwhite {
+  @apply font-bold text-white-text;
+}
+
+.textgrey {
+  @apply font-bold text-Grey-text;
+}
+
+.item {
+  @apply flex items-center;
+}
